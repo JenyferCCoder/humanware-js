@@ -1,0 +1,7 @@
+//productos
+const productos = [
+
+    {
+        
+    }
+]
