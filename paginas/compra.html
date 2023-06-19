@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="./compra.html">Tu Carrito <span class="numero_carrito">0</span></a>
+                    <a class="nav-link boton_carrito active" href="./compra.html">Tu Carrito <span class="numero_carrito">0</span></a>
                 </li>
 
                 <li class="nav-item">
@@ -84,8 +84,8 @@
         <h1 class="subt animate__animated animate__heartBeat">Tu Carrito</h1>
 
         <div class="contenedor_compra">
-            <p class="carrito_vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown-fill"></i></p>
-            <div class="carrito_productos">
+            <p class="carrito_vacio ">Tu carrito está vacío. <i class="bi bi-emoji-frown-fill"></i></p>
+            <div class="carrito_productos disabled">
 
 
                 <div class="carrito_producto">
@@ -132,21 +132,21 @@
 
             </div>
 
-            <div class="carrito_funciones">
-                <div class="carrito_funciones_derecha">
-
+            <div class="carrito_funciones disabled">
+                <div class="carrito_funciones_izquierda">
+                    <button class="carrito_funciones_vaciar">Vaciar Carrito</button>
                 </div>
 
-                <div class="carrito_funciones_izquierda">
-                    <div class="carrito_acciones_total">
+                <div class="carrito_funciones_derecha">
+                    <div class="carrito_funciones_total">
                         <p>Total: </p>
                         <p id="total">S/. 155</p>
                     </div>
-                    <div class="carrito_acciones_comprar">
-                        
-                    </div>
+                    <button class="carrito_funciones_comprar">Comprar ahora</button>
                 </div>
             </div>
+
+            <p class="carrito_comprado disabled">Gracias por tu compra! <i class="bi bi-emoji-laughing-fill"></i></p>
             
         </div>
     </section>

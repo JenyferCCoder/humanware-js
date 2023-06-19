@@ -4,7 +4,11 @@
 :root{
     --color-blanco: #fff;
     --color-negro: #000;
+    --color-azul: #004173;
     --color-celeste: #00B5F3;
+    --color-celeste-claro: #b6ffff;
+    --color-gris-claro: #edeef0;
+    --color-gris: #aaa;
 
 }
 
@@ -422,11 +426,34 @@ float: left;
     text-align: center;
 }
 
+/*Numeros*/
+
+.numero_carrito{
+    background-color: var(--color-celeste);
+    color: var(--color-gris-claro);
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+
+.boton_carrito.active .numero_carrito{
+    background-color: var(--color-gris-claro);
+    color: var(--color-celeste);
+}
+
 
 /* Carrito Vacío */
-.carrito_vacio{
-    color: #012c7c;
-    display: none;
+
+.carrito_vacio, .carrito_comprado{
+    color: var(--color-azul);
+
+}
+
+
+.contenedor_compra{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5 rem;
 }
 
 .carrito_productos{
@@ -438,7 +465,12 @@ float: left;
 .carrito_producto{
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-celeste);
+    align-items: center;
+    background-color: var(--color-gris-claro);
+    color: var(--color-azul);
+    padding: .5rem;
+    border-radius: 1rem;
+    padding-right: 20px;
 }
 
 .carrito_producto_img{
@@ -446,6 +478,67 @@ float: left;
     border-radius: 1rem;
 
 }
+
+.carrito_producto small{
+    font-size: 14px;
+}
+
+.carrito_producto_eliminar{
+    border: 0;
+    background-color: transparent;
+    color: var(--color-azul);
+    cursor: pointer;
+}
+
+.carrito_funciones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito_funciones_vaciar{
+    border: 0;
+    background-color: var(--color-gris-claro);
+    padding: 10px;
+    margin-top: 15px;
+    color: var(--color-azul);
+    border-radius: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito_funciones_derecha{
+    display: flex;
+}
+
+.carrito_funciones_total{
+    display: flex;
+    background-color: var(--color-gris-claro);
+    padding: 10px;
+    margin-top: 15px;
+    color: var(--color-azul);
+    text-transform: uppercase;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 1rem;
+
+}
+
+.carrito_funciones_comprar{
+    border: 0;
+    background-color: var(--color-celeste);
+    padding: 10px;
+    margin-top: 15px;
+    color: var(--color-gris-claro);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.disabled{
+    display: none;
+}
+
 
 /* Página Contacto */
 
