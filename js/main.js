@@ -1,4 +1,4 @@
-//productos
+
 const productos = [
     //Cámaras
     {
@@ -182,7 +182,17 @@ function actualizarBotonAgregar(){
     });
 }
 
-const productosCarrito = [];
+let productosCarrito;
+
+
+const productosCarritoLS = JSON.parse(localStorage.getItem("productos-carrito"));
+if(productosCarritoLS){
+    productosCarrito = productosCarritoLS;
+    actualizarNumero();
+}else{
+    productosCarrito = [];
+}
+
 
 function agregarCarrito(e){
 
@@ -196,6 +206,7 @@ function agregarCarrito(e){
         productoAgregado.cantidad = 1;
         productosCarrito.push(productoAgregado);
     }
+
     actualizarNumero();
 
     localStorage.setItem("productos-carrito", JSON.stringify(productosCarrito));

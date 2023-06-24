@@ -17,7 +17,6 @@
 
 </head>
 <body>
-    <script src="./js/main.js"></script>
 
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -84,55 +83,12 @@
         <h1 class="subt animate__animated animate__heartBeat">Tu Carrito</h1>
 
         <div class="contenedor_compra">
-            <p class="carrito_vacio ">Tu carrito está vacío. <i class="bi bi-emoji-frown-fill"></i></p>
-            <div class="carrito_productos disabled">
-
-
-                <div class="carrito_producto">
-                    <img class="carrito_producto_img" src="../recursos/imagenes/productos/camaras/WEBCAM-HA-W04-1.jpg" alt="">
-                    <div class="carrito_producto_nombre">
-                        <small>Nombre</small>
-                        <h3>HA-W04</h3>
-                    </div>
-                    <div class="carrito_producto_cantidad">
-                        <small>Cantidad</small>
-                        <h3>1</h3>
-                    </div>
-                    <div class="carrito_producto_precio">
-                        <small>Precio</small>
-                        <h3>S/.55</h3>
-                    </div>
-                    <div class="carrito_producto_subtotal">
-                        <small>Sub-Total</small>
-                        <h3>S/.55</h3>
-                    </div>
-                    <button class="carrito_producto_eliminar"> <i class="bi bi-trash-fill"></i> </button>
-                </div>
-
-                <div class="carrito_producto">
-                    <img class="carrito_producto_img" src="../recursos/imagenes/productos/camaras/WEBCAM-HA-W06-4.jpg" alt="">
-                    <div class="carrito_producto_nombre">
-                        <small>Nombre</small>
-                        <h3>HA-W06</h3>
-                    </div>
-                    <div class="carrito_producto_cantidad">
-                        <small>Cantidad</small>
-                        <h3>1</h3>
-                    </div>
-                    <div class="carrito_producto_precio">
-                        <small>Precio</small>
-                        <h3>S/.55</h3>
-                    </div>
-                    <div class="carrito_producto_subtotal">
-                        <small>Sub-Total</small>
-                        <h3>S/.55</h3>
-                    </div>
-                    <button class="carrito_producto_eliminar"> <i class="bi bi-trash-fill"></i> </button>
-                </div>
-
+            <p id="carrito_vacio" class="carrito_vacio ">Tu carrito está vacío. <i class="bi bi-emoji-frown-fill"></i></p>
+            <div id="carrito_productos" class="carrito_productos disabled">
+                <!--Completa con js-->
             </div>
 
-            <div class="carrito_funciones disabled">
+            <div id="carrito_funciones" class="carrito_funciones disabled">
                 <div class="carrito_funciones_izquierda">
                     <button class="carrito_funciones_vaciar">Vaciar Carrito</button>
                 </div>
@@ -146,13 +102,15 @@
                 </div>
             </div>
 
-            <p class="carrito_comprado disabled">Gracias por tu compra! <i class="bi bi-emoji-laughing-fill"></i></p>
+            <p id="carrito_comprado" class="carrito_comprado disabled">Gracias por tu compra! <i class="bi bi-emoji-laughing-fill"></i></p>
             
         </div>
     </section>
 
 
 
-    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>    
+<script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>   
+<script src="../js/compra.js"></script> 
+<script src="../js/main.js"></script>
 </body>
 </html>
