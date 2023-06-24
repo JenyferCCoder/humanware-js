@@ -125,6 +125,9 @@ const productos = [
         }
 ];
 
+const btn_subcatego = document.querySelector(".btn_subcatego")
+
+
 function cargarProductos() {
     const contenedorProductos = document.querySelector("#contenedor_productos");
     const productoTarjeta = document.querySelector(".tarjeta_produc");
@@ -143,7 +146,11 @@ function cargarProductos() {
 
 cargarProductos();
 
+btn_subcatego.forEach(boton => {
+    boton.addEventListener("click", (e) =>{
 
+    })
+})
 
 /*
 
