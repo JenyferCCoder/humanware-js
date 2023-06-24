@@ -125,14 +125,15 @@ const productos = [
         }
 ];
 
-const btn_subcatego = document.querySelector(".btn_subcatego")
+const btn_subcatego = document.querySelectorAll(".btn_subcatego");
+const contenedorProductos = document.querySelector("#contenedor_productos");
+const productoTarjeta = document.querySelector(".tarjeta_produc");
+const tituloProductos = document.querySelector("#titulo_productos");
 
+function cargarProductos(productosSeleccionados) {
+    contenedorProductos.innerHTML = "";
 
-function cargarProductos() {
-    const contenedorProductos = document.querySelector("#contenedor_productos");
-    const productoTarjeta = document.querySelector(".tarjeta_produc");
-
-    productos.forEach(producto => {
+    productosSeleccionados.forEach(producto => {
         const nuevaTarjeta = productoTarjeta.cloneNode(true);
         nuevaTarjeta.querySelector(".producto_img").src = producto.imagen;
         nuevaTarjeta.querySelector(".producto_img").alt = producto.titulo;
@@ -144,13 +145,29 @@ function cargarProductos() {
     });
 }
 
-cargarProductos();
+cargarProductos(productos);
+
 
 btn_subcatego.forEach(boton => {
-    boton.addEventListener("click", (e) =>{
+    boton.addEventListener("click", (e) => {
+      btn_subcatego.forEach(boton => boton.classList.remove("active"));
+      e.currentTarget.classList.add("active");
+  
+      if (e.currentTarget.id != "todos"){
+        const productosSubcategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+        
+        tituloProductos.innerHTML = productosSubcategoria.categoria.nombre;
+        
+        const categoriaSeleccionada = e.currentTarget.id;
+        const productosFiltrados = productos.filter(producto => producto.categoria.id === categoriaSeleccionada);
+        cargarProductos(productosFiltrados);
+      } else{
+        tituloProductos.innerHTML = "Todos los Productos";
+        cargarProductos(productos);
+      }
 
-    })
-})
+    });
+  });
 
 /*
 
