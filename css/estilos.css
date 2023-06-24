@@ -79,6 +79,10 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
 #footer-escritorio{
     display: initial;
 }
+
+#producto-oculto {
+    display: none;
+}
     /* ------------------------
     Selectores de estilo CLASS
     --------------------------*/
@@ -237,6 +241,7 @@ float: left;
     margin-top: 10px;
 }
 
+
 .fila {
     display: flex;
     flex-direction: row; 
@@ -244,6 +249,7 @@ float: left;
     padding-left: 12%;
     padding-right: 12%;
 }
+
 
 .columna {
     flex-basis: 0; 
@@ -401,20 +407,17 @@ float: left;
     color: var(--color-celeste);
 }
 
-.tarjeta_produc{
+.tarjeta_produc {
     background-color: #e9e9e9;
     color: #000;
     width: 200px;
-    height: 30px auto;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 50px;
+    margin: 5px auto 50px;
     text-align: left;
     padding: 8px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 0.25 rem;
+    gap: 0.25rem;
 }
 
 .tarjeta_titulo_produc{
