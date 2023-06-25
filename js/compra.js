@@ -6,6 +6,7 @@ const contenedorCarritoProductos = document.querySelector("#carrito_productos");
 const contenedorCarritoFunciones = document.querySelector("#carrito_funciones");
 const contenedorCarritoComprado = document.querySelector("#carrito_comprado");
 let botonEliminar = document.querySelectorAll(".carrito_producto_eliminar")
+const botonVaciar = document.querySelector(".carrito_funciones_vaciar")
 
 function cargarProductosCarrito(){
     if (productosCarrito && productosCarrito.length > 0){
@@ -73,4 +74,11 @@ function eliminarCarrito(e){
 
     localStorage.setItem("productos_carrito", JSON.stringify(productosCarrito));
     
+}
+
+botonVaciar.addEventListener("click", vaciarCarrito);
+function vaciarCarrito(){
+    productosCarrito.length = 0;
+    localStorage.setItem("productos_carrito", JSON.stringify(productosCarrito));
+    cargarProductosCarrito();
 }
