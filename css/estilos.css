@@ -95,6 +95,13 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+#mensaje_descuento_aplicado{
+    font-weight: 700;
+    color: var(--color-azul);
+    padding-top: 25px;
+    margin-left: 10px;
+}
     /* ------------------------
     Selectores de estilo CLASS
     --------------------------*/

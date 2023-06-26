@@ -13,6 +13,7 @@ const botonComprar = document.querySelector(".carrito_funciones_comprar");
 
 const inputCodigoDescuento = document.querySelector("#codigo_descuento");
 const btnAplicarDescuento = document.querySelector("#btn_aplicar_descuento");
+const mensajeDescuentoAplicado = document.querySelector("#mensaje_descuento_aplicado");
 
 function cargarProductosCarrito(){
     if (productosCarrito && productosCarrito.length > 0){
@@ -22,6 +23,7 @@ function cargarProductosCarrito(){
         contenedorCarritoFunciones.classList.remove("disabled");
         contenedorCarritoComprado.classList.add("disabled");
         contenedorCarritoDescuento.classList.remove("disabled");
+        
     
         contenedorCarritoProductos.innerHTML = "";
     
@@ -33,19 +35,19 @@ function cargarProductosCarrito(){
             <img class="carrito_producto_img" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="carrito_producto_nombre">
                 <small>Nombre</small>
-                <h3>${producto.titulo}</h3>
+                <h5>${producto.titulo}</h5>
             </div>
             <div class="carrito_producto_cantidad">
                 <small>Cantidad</small>
-                <h3>${producto.cantidad}</h3>
+                <h5>${producto.cantidad}</h5>
             </div>
             <div class="carrito_producto_precio">
                 <small>Precio</small>
-                <h3>S/.${producto.precio}</h3>
+                <h5>S/.${producto.precio}</h5>
             </div>
             <div class="carrito_producto_subtotal">
                 <small>Sub-Total</small>
-                <h3>S/.${producto.precio * producto.cantidad}</h3>
+                <h5>S/.${producto.precio * producto.cantidad}</h5>
             </div>
             <button class="carrito_producto_eliminar" id="${producto.id}"> <i class="bi bi-trash-fill"></i> </button>
             `;
@@ -109,9 +111,9 @@ function aplicarDescuento() {
     const descuento = totalCalculado * 0.1; // 10% de descuento
     const totalConDescuento = totalCalculado - descuento;
     total.innerHTML = `S/. ${totalConDescuento}`;
-    alert("Descuento aplicado correctamente");
+    mensajeDescuentoAplicado.style.display = "inline"; // Mostrar mensaje de descuento aplicado
   } else {
-    alert("Código de descuento inválido");
+    mensajeDescuentoAplicado.style.display = "none"; // Ocultar mensaje de descuento aplicado
   }
 }
 
