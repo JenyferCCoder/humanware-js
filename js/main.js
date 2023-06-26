@@ -122,6 +122,130 @@ const productos = [
                 id: "monitores"
             },
             precio: 958
+        },
+
+        //Parlantes
+        {
+            id: "parlante_dunkan",
+            titulo: "DUNKAN",
+            imagen: "../recursos/imagenes/productos/parlantes/parlante-dunkan.jpg",
+            categoria: {
+                nombre: "Parlantes",
+                id: "parlantes"
+            },
+            precio: 75
+        },
+    
+        {
+            id: "parlante_f47_aspide",
+            titulo: "F47 ASPIDE",
+            imagen: "../recursos/imagenes/productos/parlantes/PARLANTE-F47-ASPIDE.jpg",
+            categoria: {
+                nombre: "Parlantes",
+                id: "parlantes"
+            },
+            precio: 76
+        },
+    
+        {
+            id: "parlante_forest",
+            titulo: "FOREST",
+            imagen: "../recursos/imagenes/productos/parlantes/PARLANTE-FOREST-2.jpg",
+            categoria: {
+                nombre: "Parlantes",
+                id: "parlantes"
+            },
+            precio: 98
+        },
+            
+        {
+            id: "parlante_freak",
+            titulo: "FREAK",
+            imagen: "../recursos/imagenes/productos/parlantes/PARLANTE-FREAK.jpg",
+            categoria: {
+                nombre: "Parlantes",
+                id: "parlantes"
+            },
+            precio: 76
+        },
+    
+        {
+            id: "parlante_TRACY_k32",
+            titulo: "TRACY K32",
+            imagen: "../recursos/imagenes/productos/parlantes/TRACY-K32-FRENTE.jpg",
+            categoria: {
+                nombre: "Parlantes",
+                id: "parlantes"
+            },
+            precio: 98
+        },
+
+        //Kits
+        {
+            id: "kits_logitech",
+            titulo: "LOGITECH",
+            imagen: "../recursos/imagenes/productos/kits/kit_logitech.jpg",
+            categoria: {
+                nombre: "Kits",
+                id: "kits"
+            },
+            precio: 55
+        },
+    
+        {
+            id: "kits_logitech_mk220",
+            titulo: "LOGITECH MK220",
+            imagen: "../recursos/imagenes/productos/kits/kit_logitech_mk220.jpg",
+            categoria: {
+                nombre: "Kits",
+                id: "kits"
+            },
+            precio: 46
+        },
+    
+        {
+            id: "kits_microsoft_600",
+            titulo: "MICROSOFT 600",
+            imagen: "../recursos/imagenes/productos/kits/kit_microsoft_600.jpg",
+            categoria: {
+                nombre: "Kits",
+                id: "kits"
+            },
+            precio: 88
+        },
+
+        //Laptops
+        {
+            id: "laptop_hp250",
+            titulo: "HP 250 I7",
+            imagen: "../recursos/imagenes/productos/laptops/1065g7_.jpg",
+            categoria: {
+                nombre: "Laptops",
+                id: "laptops"
+            },
+            precio: 1755
+        },
+    
+        {
+            id: "laptop_lenovo_athlon",
+            titulo: "LENOVO ATHLON",
+            imagen: "../recursos/imagenes/productos/laptops/1065g75.jpg",
+            categoria: {
+                nombre: "Laptops",
+                id: "laptops"
+            },
+            precio: 1446
+        },
+    
+        {
+            id: "laptop_dell_3443",
+            titulo: "LAPTOP 3443",
+            imagen: "../recursos/imagenes/productos/laptops/DELL3443.jpg",
+            categoria: {
+                nombre: "Laptops",
+                id: "laptops"
+            },
+            precio: 1288
         }
 ];
 
