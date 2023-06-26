@@ -81,17 +81,26 @@
 
     <section>
         <h1 class="subt animate__animated animate__heartBeat">Tu Carrito</h1>
+        <h5 class="subt animate__animated animate__heartBeat">¡Si eres nuevo, Ingresa el Código de descuento "nuevoHL"</h5>
+        <h5 class="subt animate__animated animate__heartBeat">Y sorpréndete!</h5>
+
 
         <div class="contenedor_compra">
             <p id="carrito_vacio" class="carrito_vacio ">Tu carrito está vacío. <i class="bi bi-emoji-frown-fill"></i></p>
             <div id="carrito_productos" class="carrito_productos disabled">
                 <!--Completa con js-->
             </div>
+            <div class="carrito_funciones_derecha">
+                <input type="text" id="codigo_descuento" class="cod_descuento_txt" placeholder="Código de descuento">
+                <button id="btn_aplicar_descuento">Aplicar descuento</button>
+            </div>
+
 
             <div id="carrito_funciones" class="carrito_funciones disabled">
                 <div class="carrito_funciones_izquierda">
                     <button class="carrito_funciones_vaciar">Vaciar Carrito</button>
                 </div>
+                
 
                 <div class="carrito_funciones_derecha">
                     <div class="carrito_funciones_total">
@@ -104,7 +113,12 @@
 
             <p id="carrito_comprado" class="carrito_comprado disabled">Gracias por tu compra! <i class="bi bi-emoji-laughing-fill"></i></p>
             
+
+
+
         </div>
+
+
     </section>
 
 

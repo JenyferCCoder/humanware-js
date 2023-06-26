@@ -10,6 +10,9 @@ const botonVaciar = document.querySelector(".carrito_funciones_vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector(".carrito_funciones_comprar");
 
+const inputCodigoDescuento = document.querySelector("#codigo_descuento");
+const btnAplicarDescuento = document.querySelector("#btn_aplicar_descuento");
+
 function cargarProductosCarrito(){
     if (productosCarrito && productosCarrito.length > 0){
 
@@ -92,6 +95,25 @@ function actualizarTotal(){
     total.innerHTML = `S/. ${totalCalculado}`;
 }
 
+
+btnAplicarDescuento.addEventListener("click", aplicarDescuento);
+
+function aplicarDescuento() {
+  const codigoDescuento = inputCodigoDescuento.value;
+  const totalCalculado = productosCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+  
+  if (codigoDescuento === "nuevoHL") {
+    const descuento = totalCalculado * 0.1; // 10% de descuento
+    const totalConDescuento = totalCalculado - descuento;
+    total.innerHTML = `S/. ${totalConDescuento}`;
+    alert("Descuento aplicado correctamente");
+  } else {
+    alert("Código de descuento inválido");
+  }
+}
+
+
+
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito(){
     productosCarrito.length = 0;
@@ -102,3 +124,6 @@ function comprarCarrito(){
     contenedorCarritoFunciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
 }
+
+
+
