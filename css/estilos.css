@@ -96,12 +96,32 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
     border-bottom-right-radius: 10px;
 }
 
+#btn_consultar_correo{
+    border: 0;
+    background-color: var(--color-celeste);
+    padding: 10px;
+    margin-top: 15px;
+    color: var(--color-gris-claro);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 #mensaje_descuento_aplicado{
     font-weight: 700;
     color: var(--color-azul);
     padding-top: 25px;
     margin-left: 10px;
 }
+
+#mensaje_correo{
+    font-weight: 700;
+    color: var(--color-azul);
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
     /* ------------------------
     Selectores de estilo CLASS
     --------------------------*/
@@ -533,6 +553,17 @@ float: left;
 }
 
 .cod_descuento_txt{
+    display: flex;
+    background-color: var(--color-gris-claro);
+    padding: 10px;
+    margin-top: 15px;
+    color: var(--color-azul);
+    text-transform: uppercase;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 1rem;
+}
+.cod_correo_txt{
     display: flex;
     background-color: var(--color-gris-claro);
     padding: 10px;

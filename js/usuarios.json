@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "andrea@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+
+    },
+    {
+      "id": 2,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "sofia@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 3,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "eduardo@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 4,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "jose@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 5,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "matias@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 6,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "maria@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 7,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "deret@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 8,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "margarita@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 9,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "diego@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 10,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "alejandro@gmail.com",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    }
+  ]
